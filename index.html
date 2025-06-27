@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Média</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <h1>Jogo da Média</h1>
+    <button  onclick =  "jogoMedia()">Começar o Jogo </button>
+     <p id = "resultado"></p>  
+    <script>
+        function jogoMedia(){
+            let quantidade = parseInt(prompt('Quantos números você quer digitar ?'))
+            let soma = 0;
+        }
+
+        for(let i=1; i<=quantidade; i++){
+            let numero = parseFloat(prompt('Digite o ' +i+  ' número: '))
+            soma += numero;
+        }
+
+        let media = soma/quantidade;
+
+        document.getElementById('Resultado').innerText = 'A média é: ' + media;
+    </script>
+
+    <script>
+
+    </script>
+</body>
+</html>
