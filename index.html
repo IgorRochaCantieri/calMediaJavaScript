@@ -8,10 +8,39 @@
 </head>
 
 <body>
-    <h1>Jogo da Média</h1>
-    <button onclick="jogoMedia()">Começar o Jogo</button>
-    <p id="resultado"></p>  
-    <script src="script.js"></script>
+   <script>
+    window.alert('Olá, vamos calcular a média!')
+    let quantidade = parseInt(prompt('Quantos números você quer digitar?'))
+    if(isNaN(quantidade) || quantidade <= 0){
+        window.alert('Valor inválido')
+    }else{
+        let soma = 0;
+        for(let i=1; i<=quantidade; i++){
+        let numero = parseFloat(prompt(`Digite o ${i}º número`))
+        if(isNaN(numero)){
+            window.alert('Valor inválido')
+        }else{
+            soma +=numero
+        }
+
+        }
+        let media = soma/quantidade
+        window.alert(`A média vale: ${media}`)
+    }
+
+    
+    
+    
+
+    
+
+   
+
+    /*if (isNaN(quantidade) || quantidade <= 0) {
+        document.getElementById('resultado').innerText = 'Quantidade inválida.'
+        return;
+    }*/
+   </script>
 
 </body>
 </html>
